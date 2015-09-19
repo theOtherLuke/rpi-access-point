@@ -1,5 +1,5 @@
 #this must be run as root
-# sudo sh install_jenssegers_hostapd.sh
+# sudo sh jenssegers_rtl8188_hostapd_install.sh
 
 
 #this first line uninstalls hostapd if it is installed
