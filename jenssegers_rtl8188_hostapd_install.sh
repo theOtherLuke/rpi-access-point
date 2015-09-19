@@ -17,7 +17,7 @@ tar -zxvf v2.0.tar.gz
 #build hostapd for RTL8188
 echo "Building hostapd for RTL8188...
 cd RTL8188-hostapd-2.0/hostapd
-sudo make
+make
 
 #install hostapd for RTL8188
 make install
