@@ -19,7 +19,11 @@ echo "Building hostapd for RTL8188...
 cd RTL8188-hostapd-2.0/hostapd
 sudo make
 
-#install hostapd for RTL8188 and set it to run at startup
+#install hostapd for RTL8188
 make install
+
+#set hostapd for RTL8188 to start at system boot
+ln -s /etc/init.d/hostapd /etc/rc2.d/S02hostapd
+update-rc.d hostapd enable
 
 echo "Don't forget to modify /etc/hostapd/hostapd.conf"
